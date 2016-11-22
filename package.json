@@ -1,0 +1,15 @@
+{
+  "name": "Kamena_Vurla",
+  "version": "0.0.0",
+  "description": "Single page for the house",
+  "main": "server.js",
+  "author": "George Manakanatas",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "method-override": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "morgan": "latest"
+  }
+}
