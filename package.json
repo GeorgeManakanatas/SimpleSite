@@ -1,9 +1,13 @@
 {
   "name": "Kamena_Vurla",
-  "version": "0.0.0",
-  "description": "Single page for the house",
+  "version": "0.0.1",
+  "description": "Single page app to showcase a home",
   "main": "server.js",
   "author": "George Manakanatas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "body-parser": "latest",
     "express": "latest",
@@ -11,5 +15,13 @@
     "mongodb": "latest",
     "mongoose": "latest",
     "morgan": "latest"
-  }
+  },
+  "engines": {
+    "node": "7.1.0"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/GeorgeManakanatas/Webpage"
+    },
+  "license": "MIT"
 }
