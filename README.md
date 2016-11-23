@@ -58,7 +58,9 @@ telnet 10.1.1.99  27017
 ## Built With
 * [Atom](https://atom.io/) - The text editor used
 * [Postman](https://www.getpostman.com/) - For testing REST interaction with MongoDB
+
 ## Author
+George  Manakanatas
 
 ## License
 
