@@ -17,7 +17,7 @@
     "morgan": "latest"
   },
   "engines": {
-    "node": "7.1.0"
+    "node": "latest"
   },
   "repository": {
       "type": "git",

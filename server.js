@@ -6,9 +6,11 @@ var express = require('express'),
     http = require('http'),
     path = require('path'),
     mongoose = require('mongoose'),
+    morgan = require('morgan'),
     events = require('events'),
     bodyParser = require('body-parser'),
-    fs = require('fs')
+    methodOverride = require('method-override'),
+    fs = require('fs');
 
 var app = express();
 var fs, configurationFile;
@@ -29,6 +31,17 @@ db.on('error', console.error.bind(console, 'connection error:'));
 
 // CONFIGURATION
 // =============================================================================
+
+app.use(express.static(__dirname + '/frontEnd'));               // set the static files location /frontEnd/img will be /img for users
+app.use(morgan('dev'));                                         // log every request to the console
+app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
+app.use(bodyParser.json());                                     // parse application/json
+app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
+app.use(methodOverride());
+
+// DATABASE MODELS
+// =============================================================================
+var Todo = require('./backEnd/models/todoModel');
 
 // ROUTES
 // =============================================================================
