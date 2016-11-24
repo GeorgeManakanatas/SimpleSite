@@ -15,7 +15,7 @@ var express = require('express'),
 var app = express();
 var fs, configurationFile;
 // reading and parsing the information in the config file
-configurationFile = 'configuration.json';
+configurationFile = './config/configuration.json';
 var configuration = JSON.parse(fs.readFileSync(configurationFile));
 // DATABASE SETUP
 // set the database port

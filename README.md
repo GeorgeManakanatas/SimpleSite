@@ -6,7 +6,7 @@ Basic webpage to showcase a home for rent and do basic booking and communication
 ### Prerequisites
 
 The project is built using the MEAN stack on Centos7.
-The frontend will use Angular , Bower , 
+The frontend will use Angular , Bower , Bootstrap
 The backend will use Node, Express, mongoDB and mongoose
 ```
 Give examples

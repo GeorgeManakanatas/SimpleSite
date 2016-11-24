@@ -4,12 +4,12 @@
   "description": "Single page app to showcase a home",
   "main": "server.js",
   "author": "George Manakanatas",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "latest",
+    "bower": "^1.8.0",
     "express": "latest",
     "method-override": "latest",
     "mongodb": "latest",
@@ -20,8 +20,8 @@
     "node": "latest"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/GeorgeManakanatas/Webpage"
-    },
+    "type": "git",
+    "url": "https://github.com/GeorgeManakanatas/Webpage"
+  },
   "license": "MIT"
 }
