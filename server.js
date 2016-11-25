@@ -45,7 +45,12 @@ var Todo = require('./backEnd/models/todoModel');
 
 // ROUTES
 // =============================================================================
+// backe end routes
 app.use(require('./backEnd/routeControllers'))
+// front end routes
+app.get('*', function(req, res) {
+        res.sendfile('./frontEnd/mainPage/index.html');
+    });
 
 // START THE SERVER
 // =============================================================================
