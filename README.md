@@ -6,14 +6,14 @@ Basic webpage to showcase a home for rent and do basic booking and communication
 ### Prerequisites
 
 The project is built using the MEAN stack on Centos7.
-The frontend will use Angular , Bower , Bootstrap
-The backend will use Node, Express, mongoDB and mongoose
+The frontend will use Vue and Bootstrap
+The backend will use Node, Express, MongoDB and mongoose
 ```
 Give examples
 ```
 ### Installing
 
-#### Install mongoDB
+#### Install MongoDB
 Some of the following steps may require sudo privileges
 The first step is to add MongoDB to the YUM repo
 ```
