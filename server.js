@@ -14,8 +14,9 @@ var express = require('express'),
 
 var app = express();
 var fs, configurationFile;
-// reading and parsing the information in the config file
-configurationFile = './config/configuration.json';
+// reading and parsing the information in the config file. dynamic selection depending on the NODE_ENV that we set
+var configurationFile = require.main.require('./config/configuration.js').get(process.env.NODE_ENV);
+
 var configuration = JSON.parse(fs.readFileSync(configurationFile));
 // DATABASE SETUP
 // set the database port

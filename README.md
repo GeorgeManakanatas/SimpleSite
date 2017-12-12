@@ -1,16 +1,70 @@
 # HOME SHOWCASE
-Basic webpage to showcase a home for rent and do basic booking and communication.
+Basic webpage built on the mean stack to showcase a home for rent and do basic booking and communication.
+
+## Built With
+
+* [Atom](https://atom.io/) - Text editor
+* [Node.js](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 engine.
+* [Express.js](http://expressjs.com/) - A web framework for Node.js
+* [Mongoose](http://mongoosejs.com/) - Object modeling for Node.js
+* [MomgoDB](https://www.mongodb.com/) - As the database
+* [Nodemailer](https://nodemailer.com/) - Node.js integrated emailer
+* [Passport](http://passportjs.org/) - For authentication
+* [Mocha](https://mochajs.org/) - The testing framework
+* [Chai](http://chaijs.com/) - The assertion library
+* [Winston](https://github.com/winstonjs) - The logging tool
+* [Angular.js](https://angularjs.org/) - Front-end web application framework
+* [Bootstrap](http://getbootstrap.com/) - Front-end framework
+
+## File structure
+
+The file structure of the project in detail.
+
+The root folder contains fundamental files and the node_modules filder.
+All front_end components are in the front end folder and all back end components
+in the back_end folder. The goal for now is to use npm for moth the front
+and back end in order to keep a common modules folder as well as to keep
+common configuration folder.
+
+```
+root
+-- server.js         # Starts the application
+-- package.json      # Details the packages imported with npm
+-- Readme.md         # The project readme file
+---- back_end        # All the projects back_end code
+---- front_end       # All the projects front_end code
+---- config          # All the configuration files (front and back end)
+---- node_modules    # Folder with all the modules from npm
+```
+
+### Front end
+
+All of the backend code is in the back_end directory.
+
+### Back end
+
+All of the backend code is in the back_end directory.
+
+```
+backEnd
+
+---- models # Database models for mongodb collections
+      +-- todoModel.js   # Placeholder.
+---- routeControllers     # All rest services and routes to them
+      +-- index.js        # Entry point and basic sorting
+      +-- todo.js         # Placeholder
+```
 
 ## Getting Started
 
+Centos / RHEL / Fedora operating system is preferred.
+
 ### Prerequisites
 
-The project is built using the MEAN stack on Centos7.
-The frontend will use Vue and Bootstrap
-The backend will use Node, Express, MongoDB and mongoose
-```
-Give examples
-```
+This guide assumes that:  
+1) You are installing in Centos7 or a RHEL / Fedora operating system.  
+2) You are a non root user with sudo privileges.
+
 ### Installing
 
 #### Install MongoDB
@@ -77,7 +131,6 @@ dependencies with npm.
 sudo npm install
 ```
 
-
 ## Deployment
 
 ## Built With
@@ -93,7 +146,7 @@ sudo npm install
 * [Bower](https://bower.io/) - Package manager
 
 ## Author
-George  Manakanatas
+George Manakanatas
 
 ## License
 

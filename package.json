@@ -1,11 +1,13 @@
 {
   "name": "Kamena_Vurla",
-  "version": "0.0.2",
-  "description": "Single page app to showcase a home",
+  "version": "0.0.3",
+  "description": "Example frontend and backend of a single page app showcasing a home",
   "main": "server.js",
   "author": "George Manakanatas",
   "scripts": {
-    "start": "node server.js"
+    "productionStart": "cross-env NODE_ENV=productionStart node server.js",
+    "developmentStart": "cross-env NODE_ENV=developmentStart node server.js",
+    "testingStart": "cross-env NODE_ENV=testingStart node server.js"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
