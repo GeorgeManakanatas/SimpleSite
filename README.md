@@ -133,18 +133,6 @@ sudo npm install
 
 ## Deployment
 
-## Built With
-* [Atom](https://atom.io/) - The text editor used
-* [Postman](https://www.getpostman.com/) - For testing REST interaction with MongoDB
-* [MongoDB](https://www.mongodb.com/) - As our main database
-* [Mongoose](http://mongoosejs.com/) - Object modeling for Node.js
-* [Node.js](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 engine.
-* [Express.js](http://expressjs.com/) - A web framework for Node.js
-* [Nodemailer](https://nodemailer.com/) - Node.js integrated emailer
-* [Angular.js](https://angularjs.org/) - Front-end web application framework
-* [Bootstrap](http://getbootstrap.com/) - Front-end framework
-* [Bower](https://bower.io/) - Package manager
-
 ## Author
 George Manakanatas
 
@@ -153,3 +141,5 @@ George Manakanatas
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
+
+https://templated.co/ for the excellent ION template that I will modify for the front-end
