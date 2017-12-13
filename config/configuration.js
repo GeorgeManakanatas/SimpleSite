@@ -2,20 +2,48 @@
 
 var config = {
   productionStart: {
-   "databasePort" : "8081",
-   "databaseConnection" : "mongodb://127.0.0.1:27017/siteDatabase"
+    "serverPort" : "8081",
+    "serverAddress" : "127.0.0.1",
+    "TransportLayerSecurity" : false,
+    "databaseUser" : "admin",
+    "databasePassword" : "admin",
+    "database" : "mongodb://",
+    "databaseLocation" : "127.0.0.1",
+    "databasePort" : "27017",
+    "databaseName" : "siteDatabase"
   },
   developmentStart: {
-   "databasePort" : "8081",
-   "databaseConnection" : "mongodb://127.0.0.1:27017/siteDevelopmentDatabase"
+    "serverPort" : "8081",
+    "serverAddress" : "127.0.0.1",
+    "TransportLayerSecurity" : false,
+    "databaseUser" : "admin",
+    "databasePassword" : "admin",
+    "database" : "mongodb://",
+    "databaseLocation" : "127.0.0.1",
+    "databasePort" : "27017",
+    "databaseName" : "siteDevelopmentDatabase"
   },
   testingStart: {
-   "databasePort" : "8081",
-   "databaseConnection" : "mongodb://127.0.0.1:27017/siteTestingDatabase"
+    "serverPort" : "8082",
+    "serverAddress" : "127.0.0.1",
+    "TransportLayerSecurity" : false,
+    "databaseUser" : "admin",
+    "databasePassword" : "admin",
+    "database" : "mongodb://",
+    "databaseLocation" : "127.0.0.1",
+    "databasePort" : "27017",
+    "databaseName" : "siteTestingDatabase"
   },
   default: {
-   "databasePort" : "8081",
-   "databaseConnection" : "mongodb://127.0.0.1:27017/siteDevelopmentDatabase"
+    "serverPort" : "8081",
+    "serverAddress" : "127.0.0.1",
+    "TransportLayerSecurity" : false,
+    "databaseUser" : "admin",
+    "databasePassword" : "admin",
+    "database" : "mongodb://",
+    "databaseLocation" : "127.0.0.1",
+    "databasePort" : "27017",
+    "databaseName" : "siteDevelopmentDatabase"
   }
 };
 
