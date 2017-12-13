@@ -1,3 +1,6 @@
+# HOME SHOWCASE
+Basic webpage built on the mean stack to showcase a home for rent and do basic booking and communication.
+
 - [HOME SHOWCASE](#)
 	- [Built With](#)
 	- [File structure](#)
@@ -13,9 +16,6 @@
 	- [Author](#)
 	- [License](#)
 	- [Acknowledgments](#)
-
-# HOME SHOWCASE
-Basic webpage built on the mean stack to showcase a home for rent and do basic booking and communication.
 
 ## Built With
 
