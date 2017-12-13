@@ -1,3 +1,19 @@
+- [HOME SHOWCASE](#)
+	- [Built With](#)
+	- [File structure](#)
+		- [Front end](#)
+		- [Back end](#)
+	- [Getting Started](#)
+		- [Prerequisites](#)
+		- [Installing](#)
+			- [Install MongoDB](#)
+			- [Install Node.js from the EPEL Repository](#)
+			- [Install packages from npm](#)
+	- [Deployment](#)
+	- [Author](#)
+	- [License](#)
+	- [Acknowledgments](#)
+
 # HOME SHOWCASE
 Basic webpage built on the mean stack to showcase a home for rent and do basic booking and communication.
 
