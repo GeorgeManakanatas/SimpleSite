@@ -12,10 +12,14 @@
   "dependencies": {
     "body-parser": "~1.15.2",
     "bower": "~1.8.0",
+    "cors": "^2.8.3",
     "express": "~4.14.0",
     "method-override": "~2.3.7",
     "mongodb": "~2.2.11",
     "mongoose": "~4.6.8",
+    "passport": "^0.3.2",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
     "morgan": "~1.7.0"
   },
   "engines": {

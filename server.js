@@ -30,18 +30,6 @@ var databaseConnectionString = configurationParams.database+configurationParams.
 // with username and pass word
 // var databaseConnection = configurationParams.database+configurationParams.databaseUser+":"+configurationParams.databasePassword+"@"+configurationParams.databaseLocation+":"+configurationParams.databasePort+"/"+configurationParams.databaseName;
 
-//connect to mongo database
-mongoose.connect(databaseConnectionString, function(err) {
-  if (err) {
-    // if error trying to connect
-    console.error('Failed to connect to mongo');
-  }
-  if (!err) {
-    // if no error connection made
-    console.log('Successfully connected to MongoDB');
-  }
-});
-
 // connect to db
 connectToDatabase(function(databaseFlag){
 
@@ -124,7 +112,7 @@ function startTheServer(callback){
     server.listen(port);
     // checking if the server is listening
     server.on('listening', function(){
-      console.log('Listening to ', port);
+      console.log('Server listening to ', port);
       callback(true);
     });
     // checking if there is an error
