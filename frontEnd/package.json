@@ -1,0 +1,29 @@
+{
+  "name": "Kamena_Vurla",
+  "version": "0.0.4",
+  "description": "Example frontend of a single page app showcasing a home",
+  "main": "server.js",
+  "author": "George Manakanatas",
+  "scripts": {
+    "productionFrontEnd": "cross-env NODE_ENV=productionFrontEnd  http-server",
+    "developmentFrontEnd": "cross-env NODE_ENV=developmentFrontEnd http-server",
+    "testingFrontEnd": "cross-env NODE_ENV=testingFrontEnd node  http-server"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "express": "~4.14.0",
+    "cors": "^2.8.3",
+    "cross-env": "^5.0.0",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "http-server": "^0.9.0"
+  },
+  "engines": {
+    "node": "latest"
+  },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/GeorgeManakanatas/Webpage"
+  },
+  "license": "CC-BY-3.0"
+}

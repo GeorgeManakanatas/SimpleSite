@@ -42,7 +42,7 @@ startTheServer(function(serverFlag){
 // CONFIGURATION
 // =============================================================================
 app.use(passport.initialize());
-app.use(require('./backEnd/routeControllers'));
+app.use(require('./routeControllers'));
 // app.use(express.static(__dirname + '/frontEnd'));               // set the static files location /frontEnd/img will be /img for users
 // app.use(morgan('dev'));                                         // log every request to the console
 // app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
@@ -54,7 +54,7 @@ app.use(require('./backEnd/routeControllers'));
 // ROUTES
 // =============================================================================
 // backe end routes
-app.use(require('./backEnd/routeControllers'))
+app.use(require('./routeControllers'))
 // front end routes
 app.get('*', function(req, res) {
         res.sendfile('./frontEnd/mainPage/index.html');

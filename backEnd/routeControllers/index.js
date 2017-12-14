@@ -1,6 +1,6 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
-    headerOperations = require.main.require('./backEnd/middleware/headerOperations'),
+    headerOperations = require.main.require('./middleware/headerOperations'),
     router = express.Router()
 
 // MIDDLEWARE THAT NEEDS TO BE APPLIED TO ALL INCOMMING COMMUNICATION

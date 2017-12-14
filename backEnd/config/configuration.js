@@ -1,7 +1,7 @@
 // var configuration = require('../config/configuration.js').get(process.env.NODE_ENV);
 
 var config = {
-  productionStart: {
+  productionBackEnd: {
     "serverPort" : "8081",
     "serverAddress" : "127.0.0.1",
     "TransportLayerSecurity" : false,
@@ -12,7 +12,7 @@ var config = {
     "databasePort" : "27017",
     "databaseName" : "siteDatabase"
   },
-  developmentStart: {
+  developmentBackEnd: {
     "serverPort" : "8081",
     "serverAddress" : "127.0.0.1",
     "TransportLayerSecurity" : false,
@@ -23,7 +23,7 @@ var config = {
     "databasePort" : "27017",
     "databaseName" : "siteDevelopmentDatabase"
   },
-  testingStart: {
+  testingBackEnd: {
     "serverPort" : "8082",
     "serverAddress" : "127.0.0.1",
     "TransportLayerSecurity" : false,

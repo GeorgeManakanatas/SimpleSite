@@ -46,12 +46,11 @@ common configuration folder.
 
 ```
 root
-+-- server.js         # Starts the application
-+-- package.json      # Details the packages imported with npm
+
+
 +-- Readme.md         # The project readme file
 ---- back_end        # All the projects back_end code
 ---- front_end       # All the projects front_end code
----- config          # All the configuration files (front and back end)
 ---- node_modules    # Folder with all the modules from npm
 ```
 
@@ -67,10 +66,11 @@ FrontEnd
 +-- LICENCE.txt           #
 +-- no-sidebar.html       #
 +-- right-sidebar.html    #
----- css      #
----- fonts    #
----- images   #
----- js       #
+---- variants		#
+---- css      	#
+---- fonts    	#
+---- images   	#
+---- js       	#
 ```
 
 ### Back end
@@ -80,6 +80,10 @@ All of the backend code is in the back_end directory.
 ```
 backEnd
 
++-- server.js         # Starts the back end server
++-- package.json      # Details the packages imported with npm
+---- config          					# The configuration files for the back end
+			+-- configuration.js		# Server Database Transport layer info
 ---- models # Database models for mongodb collections
       +-- todoModel.js   # Placeholder.
 ---- routeControllers     # All rest services and routes to them
@@ -160,8 +164,8 @@ node --version
 
 #### Install packages from npm
 
-Go to the GDPR directory that houses the package.json file and install the
-dependencies with npm.
+Go to the directory that houses the package.json file and install the
+dependencies with npm. This will need to be done separately for the front and back end.
 ```
 sudo npm install
 ```
@@ -173,8 +177,13 @@ In that case openssl needs to be updated first
 ```
 sudo yum update openssl
 ```
-
+After that http-server will need to be installed globally. (because I can't figure out how to make it work locally, this will be fixed eventually.)
+```
+sudo npm install http-server -g
+```
 ## Deployment
+
+Once the installation is complete the front end and the back end servers need to be started individually.
 
 ## Author
 George Manakanatas

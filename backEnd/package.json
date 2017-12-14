@@ -1,18 +1,19 @@
 {
   "name": "Kamena_Vurla",
-  "version": "0.0.3",
-  "description": "Example frontend and backend of a single page app showcasing a home",
+  "version": "0.0.4",
+  "description": "Example backend of a single page app showcasing a home",
   "main": "server.js",
   "author": "George Manakanatas",
   "scripts": {
-    "productionStart": "cross-env NODE_ENV=productionStart node server.js",
-    "developmentStart": "cross-env NODE_ENV=developmentStart node server.js",
-    "testingStart": "cross-env NODE_ENV=testingStart node server.js"
+    "productionBackEnd": "cross-env NODE_ENV=productionBackEnd node backEndServer.js",
+    "developmentBackEnd": "cross-env NODE_ENV=developmentBackEnd node backEndServer.js",
+    "testingBackEnd": "cross-env NODE_ENV=testingBackEnd node backEndServer.js"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
     "bower": "~1.8.0",
     "cors": "^2.8.3",
+    "cross-env": "^5.0.0",
     "express": "~4.14.0",
     "method-override": "~2.3.7",
     "mongodb": "~2.2.11",
@@ -20,6 +21,7 @@
     "passport": "^0.3.2",
     "http": "^0.0.0",
     "https": "^1.0.0",
+    "http-server": "^0.9.0",
     "morgan": "~1.7.0"
   },
   "engines": {
@@ -29,5 +31,5 @@
     "type": "git",
     "url": "https://github.com/GeorgeManakanatas/Webpage"
   },
-  "license": "MIT"
+  "license": "CC-BY-3.0"
 }
