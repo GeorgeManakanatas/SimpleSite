@@ -1,4 +1,7 @@
+<img align="center" src="./frontEnd/images/ReadmeMDbanners/Version4.svg">
+
 # HOME SHOWCASE
+
 Basic webpage built on the mean stack to showcase a home for rent and do basic booking and communication.
 
 - [HOME SHOWCASE](#home-showcase)
@@ -261,3 +264,4 @@ UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING, LICENSOR OFFERS T
 
 - To [templated](https://templated.co/) for the excellent [ION](https://templated.co/ion) template that I will modify for the front-end
 - To [scotch.io](https://scotch.io/) for their excellent tutorials on the [M](https://scotch.io/tutorials/an-introduction-to-mongodb).[E](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4).[A](https://scotch.io/tutorials/angularjs-1-x-fundamentals-part-1).[N](https://scotch.io/@nagasaiaytha/learn-nodejs-from-scratch). stack as well as the use of [Mocha & Chai](https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai) for testing.
+- To [Chris Sevilleja](https://leanpub.com/u/sevilayha) and [Holly Lloyd](https://leanpub.com/u/hollylloyd) authors of the [MEAN Machine](https://leanpub.com/mean-machine) a lovely book that helped me get my sea legs developing with the MEAN stack.
