@@ -48,13 +48,11 @@ and back end in order to keep a common modules folder as well as to keep
 common configuration folder.
 
 ```
-root
+root/
+|-- Readme.md         # The project readme file
+|-- back_end/        # All the projects back_end code
+|-- front_end/       # All the projects front_end code
 
-
-+-- Readme.md         # The project readme file
----- back_end        # All the projects back_end code
----- front_end       # All the projects front_end code
----- node_modules    # Folder with all the modules from npm
 ```
 
 ### Front end
@@ -62,18 +60,24 @@ root
 All of the frontend code is in the back_end directory.
 
 ```
-FrontEnd
-
-+-- index.html            #
-+-- left-sidebar.htlm     #
-+-- LICENCE.txt           #
-+-- no-sidebar.html       #
-+-- right-sidebar.html    #
----- variants		#
----- css      	#
----- fonts    	#
----- images   	#
----- js       	#
+FrontEnd/
+|-- index.html            #
+|-- left-sidebar.htlm     #
+|-- LICENCE.txt           #
+|-- no-sidebar.html       #
+|-- right-sidebar.html    #
+|-- variants/		#
+|-- css/      	#
+|-- fonts/    	#
+|-- images/   	#
+|   |-- banner.jpg
+|   |-- pic01.jpg
+|   |-- pic02.jpg
+|   |-- pic03.jpg
+|   |-- ReadmeMDbanners/
+|       |-- Version2.svg
+|       |-- Version4.svg
+|-- js/       	#
 ```
 
 ### Back end
@@ -81,17 +85,21 @@ FrontEnd
 All of the backend code is in the back_end directory.
 
 ```
-backEnd
-
-+-- server.js         # Starts the back end server
-+-- package.json      # Details the packages imported with npm
----- config          					# The configuration files for the back end
-			+-- configuration.js		# Server Database Transport layer info
----- models # Database models for mongodb collections
-      +-- todoModel.js   # Placeholder.
----- routeControllers     # All rest services and routes to them
-      +-- index.js        # Entry point and basic sorting
-      +-- todo.js         # Placeholder
+backEnd/
+|-- server.js         # Starts the back end server
+|-- package.json      # Details the packages imported with npm
+|-- config/			# The configuration files for the back end
+|   |-- configuration.js	# Server Database Transport layer info
+|-- models/ 		# Database models for mongodb collections
+|   |-- todoModel.js   	# Placeholder.
+|   |-- guests.js	#
+|   |-- housingUnit.js	#
+|   |-- reservations.js	#
+|-- routeControllers/	# All rest services and routes to them
+|   |-- index.js 	# Entry point and basic sorting
+|   |-- todo.js         # Placeholder
+|-- middleware/			#
+   |-- headerOperations.js	#
 ```
 
 ## Getting Started
