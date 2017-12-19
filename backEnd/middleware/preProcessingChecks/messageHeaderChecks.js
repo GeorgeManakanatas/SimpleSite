@@ -1,7 +1,7 @@
 var express = require('express');
 
 // function checking for content-type header
-function checkContentType(req, res, next) {
+function checkMessageContentType(req, res, next) {
     // first check that there is a content type header
     if(!req.headers['content-type']){
         console.log('No content type header present') // placeholder code
@@ -21,6 +21,18 @@ function checkContentType(req, res, next) {
     }
 };
 
+// setup to work as function or middleware
+function checkMongoIdParameter(MongoId) {
+    return checkMongoIdParameter[MongoId] || (checkMongoIdParameter[MongoId] = function(req, res, next) {
+        var checkResult = RegExp("^[0-9a-fA-F]{24}$");
+        if(checkResult.test(req.params[MongoId])){
+              next();
+        } else{
+          throw new Error('Error with ID format for: '+MongoId);
+        };
+    });
+}
+
 // EXP[ORTING FUNCTIONS WE WANT TO MAKE AVAILABLE
 // =============================================================================
-module.exports = {checkContentType};
+module.exports = {checkMessageContentType};
