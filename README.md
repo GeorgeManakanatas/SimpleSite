@@ -99,11 +99,8 @@ backEnd/
 |
 |-- routeControllers/	# All rest services and routes to them
 |   |-- index.js 	# Entry point and basic sorting
-|   |-- todo.js         # Placeholder
 |		|-- guest.js
 |		|-- housingUnit.js
-|		|-- login.js
-|		|-- register.js
 |		|-- reservations.js
 |
 |-- middleware/			#

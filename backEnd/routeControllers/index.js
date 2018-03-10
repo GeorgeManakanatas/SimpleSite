@@ -3,7 +3,6 @@ var express = require('express'),
     messageHeaderChecks = require.main.require('./middleware/preProcessingChecks/messageHeaderChecks'),
     adminRoute = require('./admin')
     registerRoute = require('./register'),
-    loginRoute = require('./login'),
     guestRoute = require('./guest'),
     reservationRoute = require('./reservation'),
     housingUnitRoute = require('./housingUnit'),
@@ -49,18 +48,6 @@ router.use('/guest',
         // middleware
 
         guestRoute);
-
-// LOGIN AND REGISTER
-// =============================================================================
-router.use('/register',
-        // middleware
-
-        registerRoute);
-
-router.use('/login',
-      // middleware
-
-      loginRoute);
 
 // ADMIN
 // =============================================================================
